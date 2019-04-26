@@ -31,6 +31,10 @@ public class CapitalActivity extends AppCompatActivity {
             Toast.makeText(CapitalActivity.this,"No capital!",Toast.LENGTH_LONG).show();
         }
 
+        String as = bundle.getString("message");
+        Toast.makeText(CapitalActivity.this,as,Toast.LENGTH_LONG).show();
+
+
         btnback= findViewById(R.id.btnback);
         btnback.setOnClickListener(new View.OnClickListener() {
             @Override
